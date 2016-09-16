@@ -212,31 +212,7 @@ a {
 .link {
   color: #29abe2; }
 
-/* instagram section */
-.insta {
-  max-width: 612px;
-  margin: 100px auto;
-  padding: 0 20px; }
 
-#hero, a[data-large] {
-  display: inline-block; }
-
-.thumbnails {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-.thumbnails:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.thumbnails li {
-  float: left;
-  margin: 0 4px 0 0; }
-
-.thumbnails li:last-of-type {
-  margin-right: 0; }
 
 /* media queries */
 @media screen and (max-width: 52em) {
@@ -280,30 +256,3 @@ figcaption {
 
 .name-mobile {
   width: 100%; }
-
-/* baby photobomb */
-#area {
-  position: absolute;
-  width: 800px;
-  height: 500px;
-  overflow: hidden; }
-
-#bg {
-  opacity: 0.86;
-  z-index: 2;
-  position: absolute; }
-
-#image {
-  z-index: 1;
-  width: 365px;
-  height: 277px;
-  position: absolute;
-  top: 104px;
-  left: 223px; }
-
-#coords {
-  float: right;
-  margin-right: 100px; }
-
-.photobomb-intro {
-  margin-top: 530px; }
