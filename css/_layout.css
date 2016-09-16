@@ -1,0 +1,60 @@
+/* Container */
+
+.container {
+  margin: 0px auto;
+  max-width: 985px;
+  height: 100%;
+}
+
+/* Surgical classes */
+
+.col-gutters {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.col-baselines {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/* Margins and paddings */
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+.margin-top {
+  margin-top: 20px;
+}
+.margin-left {
+  margin-left: 20px;
+}
+.pad-bottom {
+  padding-bottom: 20px;
+}
+.pad-top {
+  padding-top: 20px;
+}
+
+/* Center text in boxes */
+
+.center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* main
+================================================== */
+
+
+.largebox-caption{
+  text-align: left;
+  padding: 12px 0 12px 0;
+}
+
+.contain {
+  max-width: 550px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+

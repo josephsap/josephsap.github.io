@@ -1,1 +1,427 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Joseph Saperstein // Creative Technologist // BDW Student</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <section class="container box-offset col-baselines margin-bottom">
+      <div class="left-col col-gutters">
+        
+        <ul class="intro">
+          <li class="name">Joseph Saperstein</li>
+          <li class="occupation">Creative Technologist</li>
+          <li id="line"></li>
+        </ul>
+        
+        <ul class="intro2">
+          <li>joesap1@gmail.com</li>
+          <li><a class="menuitem" href="#about">About</a></li>
+          <li><a href="https://github.com/josephsap" target="_blank">GitHub</a></li>
+          <li><a href="http://joesaperstein.com/saperstein-resume.pdf" target="_blank">Resume (PDF)</a></li>
+        </ul>
+
+      </div>
+        <!-- start of overlays -->
+
+      <ul class="main">
+        <li>
+          <a class="menuitem"href="#tmil"><span>+<p>Today's Military Website</p></span><img src="images/todaysmil.jpg"></a>
+        </li>
+
+        <li>
+          <a class="menuitem"href="#makeitstop"><span>+<p>MakeItStop</p></span><img src="images/makeitstop.jpg"></a>
+        </li>
+
+        <li>
+          <a class="menuitem"href="#mm"><span>+<p>Medicine + The Military</p></span><img src="images/mm.png"></a>
+        </li>
+
+        <li>
+          <a class="menuitem"href="#random"><span>+<p>JavaScript Project</p></span><img src="images/random.png"></a>
+        </li>
+
+        <li>
+          <a class="menuitem"href="#quiz"><span>+<p>Side Project: Quiz</p></span><img src="images/quiz.png"></a>
+        </li>
+
+        <li>
+          <a class="menuitem"href="#spider"><span>+<p>Spider App</p></span><img src="images/spider.jpg"></a>
+        </li>
+
+        <li>
+          <a class="menuitem"href="#story"><span>+<p>Story Website</p></span><img src="images/story.jpg"></a>
+        </li>
+
+<!--         <li>
+          <a class="menuitem"href="#js1"><span>+<p>Instagram API</p></span><img src="images/instagram-logo.jpg"></a>
+        </li> -->
+
+        <li>
+          <a class="menuitem"href="#cabinet"><span>+<p>Cabinet Website</p></span><img src="images/cab220.jpg"></a>
+        </li>
+
+<!--         <li>
+          <a class="menuitem"href="#bike"><span>+<p>Bicycle Infographic</p></span><img src="images/bike.jpg"></a>
+        </li> -->
+<!-- 
+        <li>
+          <a class="menuitem"href="#nike"><span>+<p>Nike World Cup</p></span><img src="images/nike.jpg"></a>
+        </li> -->
+
+        <li>
+          <a class="menuitem"href="#piq"><span>+<p>Startup: piq</p></span><img src="images/piq.png"></a>
+        </li>
+
+<!--         <li>
+          <a class="menuitem"href="#jj"><span>+<p>Jamba Juice</p></span><img src="images/jj.jpg"></a>
+        </li> -->
+
+      </ul>
+    </section>
+
+    <div class="overlay" id="about">
+      <div class="contain">
+        <img src="images/profile2.jpg" alt="Joseph Saperstein"/>
+        <p id="about-description">Joseph Saperstein is a Creative Technologist at <a href="http://mullen.com" target="_blank"><span class="link">Mullen</span></a> in Boston. He is studying, experimenting, creating, working in, and sometimes out of, the areas of web development and UX design.</p>
+        <p>Previously, he was a grad student at <a href="http://bdw.colorado.edu" target="_blank"><span class="link">BDW</span></a> in Boulder, Colorado, and has worked as a copywriter for the cycling industry. Before that, it was traveling the country racing bicycles.</p>
+        <p>He is inspired by mountain biking and golden-era rap music.</p>
+        <p>Contact: joesap1@gmail.com</p>
+        <ul>
+          <li>HTML + CSS (SCSS)</li>
+          <li>JavaScript, jQuery, Grunt.js, Backbone.js</li>
+          <li>Responsive Design and Development</li>
+          <li>UX Design</li>
+          <li>GitHub</li>
+          <li>PhotoShop</li>
+        </ul>
+        <div class="close">close</div>
+      </div>
+    </div>
+
+    <!-- end overlay -->
+
+    <div class="overlay" id="quiz">
+      <div class="contain">
+        <p>I built this quiz game to learn Handlebars and AJAX. I made a JSON file of quiz questions, served them up through an AJAX call, and templated them out using Handlebars.js. Later, I rebuilt it using Backbone.</p>
+        <p>Technologies used: Handlebars, AJAX, JavaScript, jQuery</p>
+        <p><a href="https://github.com/josephsap/quiz" class="link" target="_blank">See the code.</a></p>
+<!--         <p><a href="http://joesaperstein.com/quiz/index.html" target="_blank" class="link">
+        Check it out.</a></p> -->
+        <div class="close">close</div>
+      </div>
+    </div>
+
+    <div class="overlay" id="makeitstop">
+      <div class="contain">
+        <header>
+          <h2>Mullen's Holiday Card: #MakeItStop</h2>
+          <h3>Role: Development</h3>
+        </header> 
+        <p>I built the responsive website for Mullen's holiday card. It used the YouTube API to pull in a video which the user could interact with through a YouTube annotation.</p>
+        <img src="images/makeitstop-main.jpg" />
+        <p>I chose to use Backbone's views to deal with the different screens. This helped me fake autoplay the video by triggering a click on a custom play button.</p>
+        <p>Another challenge was figuring out how to keep the video constrained to the screen without the footer overlapping it while maintaining the proper aspect ratio. Before I even started building, I had to research what was possible regarding interactions in YouTube videos across desktop and mobile devices and in Facebook. My findings impacted the design and concept quite a bit.</p>
+        <p>Technologies used: Backbone.js, Grunt.js, YouTube API</p>
+        <p><a href="http://www.makeitstop.info" target="_blank" class="link">Here's the site.</a></p>
+        <div class="close">close</div>
+      </div>
+    </div>
+
+    <div class="overlay" id="jj">
+      <div class="contain">
+        <header>
+          <h2>Jamba Juice App</h2>
+          <h3>Roles: Prototyping/UI/UX/Strategy</h3>
+        </header>
+          <h4>Our challenge:</h4> 
+            <p>During our first hour of school at BDW, <a href="http://www.neighboragency.com" target="_blank" class="link">Neighbor Agency</a> delivered a brief from their client, Jamba Juice. They needed a mobile app that reduces menu confusion and in-store wait time, which are two big problems facing customers and franchisees.
+            </p>
+          <h4>Research:</h4>
+           <p>My group of three visited Jamba Juice stores, researched mobile apps, and questioned friends and family. We decided to go with a mood-based theme, concluding that consumers order based on a combination of how they are feeling and their taste preferences.</p>
+          <h4>Prototyping:</h4>
+           <p>Throughout the two weeks, we went through plenty of sketching, deliberation, and compromising. We made paper prototypes, wireframes, and used online prototyping tools. Throughout the process, we iterated over and over again. At the end of the two weeks the project culminated with a presentation. Neighbor Agency presented all of the designs to the client, and <strong>our concept was chosen as their favorite.</strong></p>
+        <figure class="gallery-thumbs">
+          <a href="images/jamba-sketch1.jpg" class="fancybox" rel="next" title="Sketches"><img src="images/jamba-sketch1-t.jpg" alt="Sketches" /></a>
+          
+          <a href="images/jamba-sketch2.jpg" class="fancybox" rel="next" title="Sketches"><img src="images/jamba-sketch2-t.jpg" alt="Sketches" /></a>
+
+          <a href="images/jamba-wire1.png" class="fancybox" rel="next" title="Annotated Wireframes"><img src="images/jamba-wire-t.png" alt="Wireframes" /></a>
+
+          <a href="images/jamba-screen.jpg" class="fancybox" rel="next" title="Screen appearance"><img src="images/jamba-screen-t.jpg" alt="Screen appearance" /></a>
+
+         <figcaption class="gallery-caption">The design process: sketches, wireframes, screen appearance (click images to enlarge).</figcaption>
+          
+        </figure>
+      <div class="close"></div>
+    </div>  
+  </div> <!-- end overlay -->
+
+    <!-- <div class="overlay" id="bike">
+      <div class="content-bike">
+        <header>
+          <h2>Bicycle Infographic</h2>
+          <h3>Roles: Concept/Development/UI/UX/Copy</h3>
+        </header>
+         <p id="bike-intro">What if you haven't bought a new bike in 10 years? This infographic helps explain a few of the common technological advances found in modern mountain bikes. It's designed to be straightforward and informative regardless of the reader's level of technical knowledge.</p>
+         <p class="title">Hover over the green rectangles to see more.</p>
+
+      <div class="left">
+        <img src="images/1bb.jpg" alt="Bottom Bracket" data-closeup="images/pfbb-mtn.jpg" id="bb" data-caption="By enlarging the bottom bracket junction, the down tube, seat tube and chainstays can be made larger and stiffer. A stronger, more responsive frame is the result. Since the bearings are placed inside the frame, they're better protected from dirt so they'll last longer."/>
+
+        <img src="images/1fa.jpg" alt="15mmQR" data-closeup="images/front-ta.jpg" id="fqr" data-caption="A 15mm or 20mm through-axle in the fork (hub/fork connection) is stiffer and not much heavier than a standard quick-release. You'll notice the front wheel tracking more precisely through technical sections of trail."/>
+
+        <img src="images/1het.png" alt="Tapered Head Tube" data-closeup="images/tapered-ht-mtn.jpg" id="ht" data-caption="For increased stiffness and improved steering precision, tapered head tubes and forks pair an oversize lower steerer tube with a standard diameter upper steerer tube. This combination sheds weight compared to straight 1 1/2-inch systems, and adds stiffness when compared to straight 1 1/8-inch systems. The result is a bike that tracks better through corners while allowing for the use of standard stems."/>
+        
+        <img src="images/1ra.jpg" alt="Rear Through-Axle" data-closeup="images/rear-ta.jpg" id="rqr" data-caption="A rear through-axle increases the frame's lateral stiffness which is apparent during sharp accelerations and hard cornering. It also makes wheel installation easier."/>        
+
+        <p id="bot-copy">
+          Bikes are constantly evolving. The general trend: making frames and forks stiffer and stronger. What's this mean? You'll be able to ride faster and with more confidence, and therefore more fun!</p>
+        </div>
+     
+     <div class= "right">
+          <img src="images/front-ta.jpg" id="rt-big" alt="15mmQR"/>
+          <p id="caption">A 15mm or 20mm through-axle in the fork (hub/fork connection) is stiffer and not much heavier than a standard quick-release. You'll notice the front wheel tracking more precisely through technical sections of trail.</p>
+     </div>
+      <div class="close"></div>
+    </div>
+  </div> --> <!-- end overlay -->
+
+  <div class="overlay" id="spider">
+    <div class="contain">
+      <header>
+        <h2>Spider App</h2>
+        <h3>Role: Development</h3>
+      </header> 
+      <p>This was an internal project for the Creative Technology department at Mullen. It's a tool named Spider (after the chart used) to help employees and supervisors align their goals.</p>
+      <p>It has a number of input fields, sliders, and two HTML5 canvases that display the results. You can also toggle the canvas layers for you and your supervisor.</p>
+      <p>Another developer and I hooked it up to a Mongo DB database. I had to grab the input values, create a JavaScript object, and read that object back from the database and fill in the input fields.</p>
+      <p>Technologies used: JavaScript, jQuery, Canvas, Chart.js plugin, Bootstrap</p>
+      <p>You won't be able to see the latest version outside of the Mullen network, but a first draft is <a href="http://work.mullen.com/spider" target="_blank" class="link">here.</a></p>
+      <div class="close"></div>
+    </div>
+  </div>
+
+  <div class="overlay" id="mm">
+    <div class="contain">
+      <header>
+        <h2>Medicine + The Military</h2>
+        <h3>Role: Lead Front-End Development, UX, Visual Design, Workflow Optimization</h3>
+      </header> 
+      <p>The Military is having trouble recruiting doctors, so my team is building an informative website to clarify the application process, drive interest, dispel myths, and ultimately increase the number of doctors joining the military.</p>
+      <p>This was a project where I was able to show that I'm more than a developer. Once I was informed that I would be involved, I immediately insisted that the six key people building the site (me, UX, art director, designer, content, copy) work together early on and frequently. We did, and the result was a happy and impressed client and account team. We were able to show how a site's theme can be carried out through interaction design, and I created a demo to further illustrate the point to the client.</p>
+      <p>I made many development decisions too. Since the timeline and budget were short, I chose to use Bootstrap to speed things up on my end. Content will be added to the site in the future, so the backend developer and I chose to use Drupal to make it easy for a copywriter to update the content without a developer's help. Since our primary target audience is college-age and tech-savvy, we chose to carry over mobile icons and interactions to the desktop (see the menu).</p>
+      <img src="images/menuopen.png" />
+      <p>The menu opens and closes on scroll.</p>
+      <img src="images/menuclose.png" />
+      <p>The UX designer and I also put together a round of testing using Mullen interns as subjects (they were part of our target audience) using paper prototypes of the site.</p>
+      <p>Every animation is built with speed in mind. I'm animating properties that are easy for the browser to process, such as using translate instead of animating the top position.</p>
+      <p>Technologies used: JavaScript, jQuery, SCSS, Bootstrap, Grunt.js, Modernizr, Drupal, Icon fonts</p>
+      <p><a href="http://medicineandthemilitary.com" target="_blank" class="link">
+      View the site</a></p>
+      <p><a href="https://github.com/josephsap/mmsite" target="_blank" class="link">
+      Code samples</a></p>
+<!--       <p><a href="http://65.61.179.69" target="_blank" class="link">
+      Here's a link to the dev site</a></p> -->
+      <div class="close"></div>
+    </div>
+  </div>
+
+  <div class="overlay" id="tmil">
+    <div class="contain">
+      <header>
+        <h2>Today's Military Website</h2>
+        <h3>Role: Development</h3>
+      </header> 
+      <p>One of Mullen's clients is the Department of Defense, and I helped develop a responsive site to inform someone considering joining the military of their options. I came in for the last five months of two-year process, taking over for another developer. I was responsible for the majority of the responsive CSS, the map implementation, and many JavaScript and CMS tasks.</p>
+      <p>The main challenge for this project was re-writing many lines of CSS. I felt the site was built incorrectly, so I had to re-do a large amount of work. Why?</p> 
+      <img src="images/bootcamp.jpg" alt="Today's Military" />
+      <p>For example, in this section, with an image to the left and text to the right, the original developer placed the text to the right with padding, which on smaller screens, resulted in text wrapping below the image. I re-wrote all of these instances and floated each section to the left and right. In the process, I was also able to cut out many lines of code.</p>
+      <p>Another significant task was implementing the interactive map of all the military bases around the world. (Click the image to see it on the live site.)</p>
+      <a href="http://todaysmilitary.com/living/bases-around-the-world" target="_blank"><img src="images/map.jpg" alt="map"/></a>
+      <p>This was another re-write, requiring me to remove 97% of the original code because it was crashing on iOS 7 and in IE8. I became quite familiar with the Google Maps docs and working with JavaScript objects.</p>
+      <p>Technologies used: JavaScript, jQuery, SCSS, Google Maps API, Drupal, PHP</p>
+      <p><a href="http://todaysmilitary.com" target="_blank" class="link">
+      The live site is here.</a></p>
+      <div class="close"></div>
+    </div>
+  </div>
+
+  
+
+    <div class="overlay" id="cabinet">
+      <div class="contain">
+        <header>
+          <h2>Cabinet Design</h2>
+          <h3>Roles: Development/UX</h3>
+        </header> 
+        <p>This was a freelance front-end build for a design/video/branding shop. The design concept was theirs, and a couple of classmates and I worked together to bring it to life. We collaborated with the Cabinet team to enhance the user experience and refine the design.</p>
+        <h4>Design Improvements:</h4>
+        <p>Below is their intro screen which is an autoplay video. Originally, the bar with the logo and "Enter the Cabinet" was only visible on mouseover. I tested the site with some of our classmates and they didn't know what to do. I took this feedback to the client, proposed making the bar visible at all times, and they approved.</p> 
+        <img src="images/cabinet-one.jpg" alt="Cabinet Website"/>
+        <p>The Services screen below was essentially a list with a non-informative hover state. I suggested adding tooltips on hover with copy showing Cabinet's strengths in these areas. The tooltips added much-needed information and interactivity to the site.</p>
+        <img src="images/cabinet-two.jpg" alt="Cabinet Website"/>
+        <p><a href="http://www.cabinetofcreatives.com" target="_blank" class="link">
+        View it live: Cabinet of Creatives</a></p>
+        <div class="close"></div>
+      </div>
+    </div>
+
+    <div class="overlay" id="baby">
+      <div class="contain">
+        <header>
+          <h2>Seventh Generation Baby Photobomber</h2>
+          <h3>Role: Build a JavaScript Prototype</h3>
+        </header> 
+        <p>Inspired by unbaby.me, Seventh Generation asked Made Movement to create a Facebook app where users could bomb their friend's photos with images of a baby. I was asked to create a prototype of the masking feature which output the final coordinates and would "bounce" the image back if the user tried to position it outisde of the clipping mask.</p>
+        <img src="images/sevgen-baby.jpg" />
+        <h4>Process:</h4>
+        <p>I created a "clipping mask" in PhotoShop then placed an image behind it. Since I had to get this project completed in a limited amount of time, I used jQuery UI's draggable feature, then added my own JavaScript to it. The final coordinates are output to the console, and the image automatically bounces back to cover the whole mask if it's out of bounds.</p>
+        <p><a href="http://joesaperstein.com/photobomb.html" target="_blank" class="link">
+        View my prototype (not mobile friendly)</a></p>
+        <p><a href="http://babyphotobomb.com" target="_blank" class="link">
+        View the live site: Baby Photobomb</a></p>
+        <div class="close"></div>
+      </div>
+    </div>
+
+
+
+    <div class="overlay" id="piq">
+      <div class="contain">
+        <header>
+          <h1>piq, a jukebox for social spaces</h1>
+          <h2>Roles: Development/UX/Copywriting/Business Development</h2>
+        </header> 
+       <p>The second semester at BDW is called Startup, which is essentially an accelerator like TechStars. My team, piq, made a "jukebox". It is a hardeware device that plugs in to your speakers, and since it has WiFi, users can pull up the web app and choose what song plays next, creating a collaborative playlist. The prototype was built on a Raspberry Pi and the music comes from Spotify.</p>
+       <h3>My Role:</h3>
+        <p>I did whatever was needed including building and designing the marketing site, writing and editing, coordinating a Kickstarter video shoot, and plenty of user testing and research.</p>
+        <figure>
+          <img src="images/piq-hero-img.png" alt="Website hero image" /> 
+          <figcaption>A graphic I made explaining piq.</figcaption>
+        </figure>
+        <p>Taking something from concept to reality was in invaluable experience. Learning where to spend your time and what to do next were the major takeaways. There's no doubt this experience will benefit me whenever I have to work in a team.</p>
+       <h3>Design Case Study:</h3>
+        <img src="images/search.png" alt="piq UI"/>
+        <p>Above is an early mock for the app's user interface. It features two sliders that default to display five songs and five artists. The image on the right is my design which defaults to a long scrolling list of songs, artists, or albums. We had users searching for songs and wondering why they were only getting five results. My design was passed over in favor of the sliding design, which I felt wasn't intuitive. My design was eventually validated when one of our design teachers sketched my concept without having seen it. <strong>What did I learn? Next time, I have to push harder for my design, back it up with research, and show my reasoning.</strong></p>
+        <figure>
+          <img src="images/piq-hardware.jpg" alt="piq evolution" /> 
+          <figcaption>We made a hardware product.</figcaption>
+        </figure>
+      <h3>Outcome:</h3>
+        <p>The team won PitchFest, which was the semester-ending competition amongst the six BDW Startup teams. The Kickstarter campaign fell well short of its $55,000 goal.</p>
+        
+        <p><a href="http://www.kickstarter.com/projects/piq/piq-a-jukebox-for-social-spaces" target="_blank" class="link">Check out the Kickstarter</a></p>
+        <p><a href="images/piqpres.pdf" target="_blank" class="link">
+        Our Boulder-Denver New Tech Presentation</a></p> 
+      <div class="close">close</div>
+    </div>
+  </div>
+
+  <!-- <div class="overlay" id="js1">
+    <div class="insta">
+      <p>This was a project for my front-end development class. Using the Instagram API, I pulled in five of the most popular photos and their captions. If you click on the thumbnails, it displays the larger version of the picture above, and then you can link out to the original post. While building this project, I endured too many cat pictures, duck faces, and #YOLO hashtags.</p>
+      <h1>Big Vern's Instagram Photos</h1>
+
+      <a href="" id="hero" target="_blank">
+        <img src=""/>
+        <span></span>
+      </a>
+      
+      <ul class="thumbnails"></ul>
+    <div class="close">close</div>
+  </div>
+</div> -->
+
+  <div class="overlay" id="nike">
+    <li class="contain">
+      <h1>Concepting: Nike World Cup 2014</h1>
+      <h2>Roles: Concepting, presentation, user stories</h2>
+      <p><a href="http://www.wirestone.com/index.php" target="_blank">Wirestone Group</a> tasked my BDW class team with a challenge: Create a World Cup experience worthy of Nike.</p>
+      <img src="images/nike-app.jpg" alt="Wirestone/BDW"/>
+      <p>Keeping in mind soccer fans' team loyalty and the fact that not everyone will be able to travel to Brazil for the World Cup, we created a team-centric experience that anyone, anywhere could participate in. The first part is the app that changes your phone to your team's colors, gives you team-related content, and helps you find where your fellow fans are watching the game. Of course, you can buy Nike product right in the app.</p>
+      <p>If a fan is in Brazil watching the matches, they can interact with the vantage wall using the Kinect. If you stand in front of the wall with the app on, your body would show up and act like a clipping mask, offering up team-related content. It's interactive, meaning you can see past World Cup highlights, get stats, and see what's happening on social media. Then, if you stand close enough to a fan of a different team, the overlapping content would show the history between both teams. Nike product would be integrated as a timeline so you could view the soccer shoes' evolution since its inception.</p>
+      <img src="images/nike-wall.jpg" alt="Wirestone/BDW"/>
+<!--       <p><a href="Nike_WC_Wirestone_6_21.key">See the presentation deck</a></p> -->
+    </li>
+    <div class="close">close</div>
+  </div>
+
+  <div class="overlay" id="random">
+    <li class="contain">
+      <h1>Pure JavaScript Background Randomizer</h1>
+      <a href="bkgrnd-rndm.html" target="_blank"><img src="images/bg-random-big.png" class="bg"/></a>
+      <p>This is a side project that was done with the help of Jeremy from Mode Set, a development studio in Denver. It started out as a "candy machine", but I made all of the objects change color randomly every half second. I used JavaScript's protypal inheritance, loops, array, objects, etc. to make this absolutely useless thing. It was fun and a great way to build skills.</p>
+      <p>Click the image to have a look at it in action.</p>
+    </li>
+    <div class="close">close</div>
+  </div>
+
+  <div class="overlay" id="story">
+    <li class="contain">
+      <h1>Story Website Build</h1>
+      <h2>Roles: Development/UX</h2>
+      <a href="http://thisisstory.com/" target="_blank"><img src="images/story-cover.jpg"></a>
+      <p>Story, a store in Manhattan switches out their merch, fixtures, and changes their theme about every three months, like a magazine. Their current "story" is Made in America, which includes Made Collection as a collaborator.</p>
+      <p>Their current site wasn't doing a good job telling their story. My design partner and I determined we had to higlight their previous content which we felt conveyed the uniqueness of this store better than an about page could. We also tried to keep the editorial theme throughout, as it's the general idea underlying the brand.</p>
+      <p>I built a fully responsive Wordpress site with custom into animation and some customized Wordpress plugins. For UX, I was able to bring the human-centered perspective to the development and design process. For example, we debated heavily about what the site visitor should see on the first page, and how we should lay out the site's current and future content.</p>
+      <p>Tools used: Wordpress, jQuery, icoMoon icon fonts, SASS, responsive design.</p>
+      <h2>Visit the site:</h2>
+      <p><a href="http://thisisstory.com">STORY</a></p>
+      <h3>Press:</h3>
+      <p><a href="http://www.psfk.com/2013/07/story-made-in-america-store.html">PSFK</a></p>
+      <p><a href="http://www.wwd.com/retail-news/specialty-stores/made-in-america-debuts-at-story-with-100-labels-7063196">Women's Wear Daily</a></p>
+
+    </li>
+    <div class="close">close</div>
+  </div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+    <script>
+
+
+    function LongestWord(sen) { 
+      
+      // loop through sentence
+      // count length of words
+      // return longest word
+      
+      var words = sen.split(' ');
+
+      
+      console.log(words)
+      var longest = words.sort(function() {
+        
+      });
+      
+      return sen; 
+             
+    }
+
+    LongestWord("This is the remix");
+
+    </script>
+   
+    <!-- <script type="text/javascript" src="js/insta.js"></script> -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/photobomb.js"></script>
+
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen">
+    
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.4"></script>
+
+  </body>
+</html>
