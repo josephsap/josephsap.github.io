@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.fancybox').fancybox();
+  // $('.fancybox').fancybox();
   
     //start overlays
   $('.menuitem').click(function(e){
