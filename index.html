@@ -35,7 +35,7 @@
 
       <ul class="main">
         <li>
-          <a class="menuitem"href="#trainco"><span>+<p>TPC Trainco Search &amp; Cart</p></span><img src="images/trainco-thumb.jpg"></a>
+          <a class="menuitem"href="#alexa"><span>+<p>Alexa Skill</p></span><img src="images/alexa.png"></a>
         </li>
 
         <li>
@@ -43,7 +43,7 @@
         </li>
 
         <li>
-          <a class="menuitem"href="#arrow"><span>+<p>Arrow Electronics</p></span><img src="images/arrow-thumb.png"></a>
+          <a class="menuitem"href="#kh"><span>+<p>KarshHagan.com</p></span><img src="images/kh-thumb.jpg"></a>
         </li>
 
         <li>
@@ -55,7 +55,7 @@
         </li>
 
         <li>
-          <a class="menuitem"href="#kh"><span>+<p>KarshHagan.com</p></span><img src="images/kh-thumb.jpg"></a>
+          <a class="menuitem"href="#arrow"><span>+<p>Arrow Electronics</p></span><img src="images/arrow-thumb.png"></a>
         </li>
 
       </ul>
@@ -69,12 +69,11 @@
         <p>He is inspired by mountain biking and golden-era rap music.</p>
         <p>Contact: joesap1@gmail.com</p>
         <ul>
-          <li>Keystone.js, JavaScript, Gulp.js, Backbone.js, MongoDB, Node.js</li>
-          <li>HTML + CSS (SCSS)</li>
+          <li>Node, Express, React, Redux, JavaScript, Backbone</li>
+          <li>MongoDB, Heroku, Gulp, Keystone.js CMS</li>
           <li>Responsive Design and Development</li>
           <li>UX Design</li>
           <li>Git</li>
-          <li>PhotoShop</li>
         </ul>
         <div class="close">close</div>
       </div>
@@ -88,7 +87,7 @@
         <h3>Role: Front-End Development</h3>
         <img src="images/llist-detail.jpg" />
         <p>I worked at this fashion and hairstyle inspiration startup as a front-end developer. My tasks included CSS architecture, creating a styleguide, and building new features in Backbone.js. Along with another employee, we ran a user-testing session with users in the target audience. We came up with a testing script and moderated a testing session.</p>
-        <p>Technologies used: Backbone.js, AJAX, JavaScript, jQuery, SCSS</p>
+        <p>Technologies used: Backbone.js, Node.js, AJAX, JavaScript, jQuery, SCSS</p>
         <p><a href="http://www.cssdesignawards.com/sites/looklist-hair/26370/" class="link" target="_blank">Looklist on CSS Design Awards</a></p>
         <p><a href="https://lookli.st" class="link" target="_blank">View the site.</a></p>
         <div class="close">close</div>
@@ -106,7 +105,7 @@
         <p>That's the message we conveyed with the site by highlighting some of Arrow's more interesting case studies. We told the story of how their technology has helped dairy farmers, a quadriplegic race car driver, and built health clinics across Africa.</p>
         <h4>Technological challenges</h4>
         <p>Arrow's creative department wanted to have control over the site. For this reason, we chose to build it on a highly customizable Node.js-based CMS platform called Keystone.js. We used Mongo for the database and Amazon S3 for asset hosting, and the site was hosted on Heroku. It was actually a super bowl site &ndash; Arrow ran a super bowl commercial nationwide and at the end, the URL for this site was shown.</p>
-        <p>Technologies used: Keystone.js, Backbone.js, Gulp.js, MongoDB, Heroku, S3.</p>
+        <p>Technologies used: Keystone.js, Node.js, Backbone.js, Gulp.js, MongoDB, Heroku, S3.</p>
         <p><a href="http://www.fiveyearsout.com" target="_blank" class="link">View the site.</a></p>
         <div class="close">close</div>
       </div>
@@ -138,23 +137,24 @@
         <img src="images/kh-detail.jpg" />
         <p>Karsh Hagan, one of Denver's most respected ad agencies, recently went through a rebrand and of course the website had to be updated to match. When I started working on it, it was a static site using AJAX &amp; PHP to serve pages. I integrated the Keystone.js CMS into it and launched it on Heroku.</p>
         <p>The most difficult challenge was integrating the agency's Wordpress blog. I had to create blogging functionality in Keystone complete with search, category sort, pagination, and finally display the posts in reverse chronological order. Pulling in the blog posts from the Wordpress API was a challenge. I wrote a script to match the data up with the Mongoose models and correlate categories to posts.</p>
-        <p>Technologies used: Keystone.js, MongoDB, JavaScript, Heroku</p>
+        <p>Technologies used: Keystone.js, Node.js, Express.js, MongoDB, JavaScript, Heroku, MailGun, Jade</p>
         <p><a href="http://karshhagan.com" target="_blank" class="link">View the site</a></p>
+        <p><a href="https://github.com/KarshHagan/karshhagan-site" target="_blank" class="link">GitHub</a></p>
         <div class="close"></div>
       </div>
     </div>
 
     
 
-    <div class="overlay" id="trainco">
+    <div class="overlay" id="alexa">
       <div class="contain">
-        <h2>TPC Trainco Website</h2>
-        <h3>Role: Front-End Development</h3>
-        <img src="images/trainco-detail.jpg" />
-        <p>TPC Trainco offers maintenance training seminars across the US and Canada. We built them a new, responsive website where the main feature was a course search. For this, I had to interact with an API and display the results by date, location, and type. The user could then select a course, add attendees, and add it to their cart. I then sent this data off to be used in the checkout process. I used Backbone to build everything.</p>
-        <p>Note: they've since added additional functionality and features. The search is now buit in Angular.</p>
-        <p>Technologies used: Backbone.js, JavaScript, jQuery, Bootstrap, SCSS</p>
-        <p><a href="http://tpctrainco.com" target="_blank" class="link">View the site.</a></p>
+        <h2>Alexa Skill</h2>
+        <h3>Role: Development, Design</h3>
+        <p>The Task:</p>
+        <p>Connect enable karshhagan.com to be interactive via voice commands.</p>
+        <p>I wrote an Alexa skill to deliver information about Karsh Hagan, an ad agency in Denver. It works by hitting API endpoints and returning data from the CMS. I wrote the API endpoints in Node and the application in Node and regular JavaScript. I also used Alexa-app-server which is a tool that generates utterances and schemas.</p>
+        <p>I then deployed it to AWS Lambda and Alexa Skills kit.</p>
+        <p>Technologies used: AWS Lambda, Alexa Skills kit, Node, ES6, Mocha, Chai</p>
         <div class="close"></div>
       </div>
     </div>

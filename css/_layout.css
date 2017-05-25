@@ -52,9 +52,16 @@
 }
 
 .contain {
-  max-width: 550px;
+  /*max-width: 550px;*/
   margin: 100px auto;
-  padding: 0 20px;
+  /*padding: 0 20px;*/
+  background: white;
+  width: 90%;
+  height: 90%;
+  position: relative;
+  max-width: 800px;
+  padding: 5rem;
+  display: table;
 }
 
 
